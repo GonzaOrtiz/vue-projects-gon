@@ -5,26 +5,15 @@ const props = defineProps({
 </script>
 
 <template>
+  
   <Transition name="modal">
     <div v-if="show" class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
-          <div class="modal-header">
-            <slot name="header">default header</slot>
-          </div>
-
-          <div class="modal-body">
-            <slot name="body">default body</slot>
-          </div>
-
+          <slot name="area"></slot>
           <div class="modal-footer">
-            <slot name="footer">
-              default footer
-              <button
-                class="modal-default-button"
-                @click="$emit('close')"
-              >OK</button>
-            </slot>
+            <button class="btn btn-danger textcolor overlay"  @click="$emit('close')" >Cerrar</button>
+            <slot name="buttons"></slot>
           </div>
         </div>
       </div>
@@ -40,9 +29,10 @@ const props = defineProps({
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   display: table;
   transition: opacity 0.3s ease;
+
 }
 
 .modal-wrapper {
@@ -55,7 +45,7 @@ const props = defineProps({
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
-  border-radius: 2px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
 }
@@ -73,15 +63,6 @@ const props = defineProps({
   float: right;
 }
 
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
-
 .modal-enter-from {
   opacity: 0;
 }
@@ -94,5 +75,21 @@ const props = defineProps({
 .modal-leave-to .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.backcolor {
+  background-color: rgb(5, 40, 72);
+  font-family: arial;
+}
+
+.textcolor {
+  color: white;
+  font-size: medium;
+  font-family: arial;
+}
+#overlay {
+  z-index: 10;
+  background: brown;
+  position: relative;
 }
 </style>

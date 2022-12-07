@@ -1,17 +1,14 @@
 <template>
-
-<!-- <button id="show-modal" @click="showModal = true">Show Modal</button> -->
-
-<Teleport to="body">
-  <!-- use the modal component, pass in the prop -->
-  <ModalVue :show="showModal" @close="showModal = false">
-    <template #header>
-      <h3>custom header</h3>
-    </template>
-  </ModalVue>
-</Teleport>
-
-
+  <Teleport to="body">
+    <ModalVue :show="showModal" @close="showModal = false">
+      <template v-slot:area>
+        <textarea>ingrese un texto</textarea>
+      </template>
+      <template v-slot:buttons>
+        <button class="btn btn-success textcolor overlay" @click="">Aceptar</button>
+      </template>
+    </ModalVue>
+  </Teleport>
 
   <div class="container-fluid setting-principal-card">
     <div class="d-flex justify-content-between">
@@ -52,6 +49,13 @@ const showModal = ref(false)
 h3 {
   margin: 10px 10px 0px 10px;
   padding: 10px 10px 0px 10px;
+}
+
+textarea {
+  height: 100px;
+  width: 240px;
+  border-color: rgb(5, 40, 72);
+  border-radius: 5px;
 }
 
 .backcolor {
