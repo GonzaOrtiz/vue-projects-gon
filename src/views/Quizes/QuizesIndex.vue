@@ -11,24 +11,22 @@
         <input v-model="filter" @keypress="listFilter(filter)" class="form-control ms-3" type="text" />
       </div>
     </div>
-
-
-      <CardVue :quiz="quizesList">
-      </CardVue>
-    </div>
-    <!-- </div> -->
+    <CardVue :quiz="quizesList">
+    </CardVue>
+  </div>
+  <!-- </div> -->
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue";
 import CardVue from "@/components/Card.vue";
-import q from "../data/quizes.json";
+import quizes from "../../data/quizes.json";
 
 const filter = ref("")
-const quizesList = ref(q);
+const quizesList = ref(quizes);
 
 const listFilter = (search: string) => {
-  quizesList.value = q.filter(x => x.title.toLowerCase().includes(search.toLowerCase()));
+  quizesList.value = quizes.filter(x => x.title.toLowerCase().includes(search.toLowerCase()));
 }
 
 
