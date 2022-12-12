@@ -2,7 +2,7 @@
   <div class="container-fluid setting-principal-card">
     <div class="d-flex justify-content-between align-items-center">
       <div col>
-      <h3 class="h3-custom">Notes</h3>
+      <h3 class="h3-custom mb-2">Notes</h3>
       </div>
        <div col>
       <button class="btn btn backcolor textcolor mb-auto" id="show-modal" @click="showModal = true">Nuevo</button>
