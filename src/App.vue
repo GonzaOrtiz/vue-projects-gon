@@ -19,7 +19,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <a class="list-group-item list-group-item-action list-group-item back-second-color textcolor p-3" href="#!"><i
             class="bi bi-clipboard-fill">&nbsp; &nbsp;</i> Profile</a>
             <RouterLink class="list-group-item list-group-item-action list-group-item 
-        back-second-color textcolor p-3" to="/subjects"> <i class="bi bi-cloud-upload">&nbsp; &nbsp;</i> Subjects
+        back-second-color textcolor p-3" to="/quizes"> <i class="bi bi-cloud-upload">&nbsp; &nbsp;</i> Cuestionarios
         </RouterLink>
             <RouterLink class="list-group-item list-group-item-action list-group-item 
         back-second-color textcolor p-3" to="/notes"> <i class="bi bi-file-earmark-font">&nbsp; &nbsp;</i> Notas

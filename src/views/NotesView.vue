@@ -37,12 +37,12 @@
       </div>
       </template>
       <template v-slot:area>
-        <textarea v-model="newNote"></textarea>
+        <textarea v-model="newNote" class="form-control"></textarea>
         <p class="redcolor" v-if="errorMessage">{{ errorMessage }}</p>
       </template>
       <template v-slot:buttons>
-          <button class="btn btn-danger textcolor overlay mx-3 mb-auto" @click="showModal = false">Cerrar</button>
-          <button class="btn btn-success textcolor overlay mb-auto" @click="btnAddNote">Aceptar</button>
+          <button class="btn btn-danger textcolor overlay mx-3  mt-3 mb-auto" @click="showModal = false">Cerrar</button>
+          <button class="btn btn-success textcolor overlay  mt-3 mb-auto" @click="btnAddNote">Aceptar</button>
       </template>
     </ModalVue>
   </Teleport>
