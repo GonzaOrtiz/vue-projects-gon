@@ -8,11 +8,11 @@
         <h6 class="h6-custom mt-2">Buscar: </h6>
       </div>
       <div col>
-        <input class="form-control ms-3" type="text" />
+        <input v-model="filter"  v-on:keypress="listFilter" class="form-control ms-3" type="text" />
       </div>
     </div>
-    <div class="row" v-for="item in notes" :key="item.id">
-      <div class="col-sm-3 " v-for="item in notes" :key="item.id">
+    <div class="row">
+      <div class="col-sm-3 "  v-for="item in quizesList" :key="item.id">
         <div class="card card-image-custom">
           <img class="card-img" :src="item.image">
           <div class="card-body ">
@@ -24,21 +24,19 @@
       </div>
     </div>
   </div>
-
-
-
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue";
+import q from "../data/quizes.json";
 
-const notes = ref(<any>[{
-  id: Math.floor(Math.random() * 1000000),
-  title: 'Matemática',
-  text: 'Prueba tus habilidades matemáticas.',
-  image: 'https://phantom-marca.unidadeditorial.es/1c4cbdc04587cda2e9268e878cd47168/resize/660/f/webp/assets/multimedia/imagenes/2022/12/10/16706837224997.jpg',
-}])
+const quizes = ref(q)
+const filter = ref("")
+const quizesList = ref(q);
 
+const listFilter = () =>{
+  quizesList.value = q.filter(x => x.title.toLowerCase().startsWith(filter.value.toLowerCase()));
+}
 
 
 
@@ -58,5 +56,4 @@ const notes = ref(<any>[{
   padding: 0;
   max-width: 98%;
   font-family: arial;
-}
-</style>
+}</style>

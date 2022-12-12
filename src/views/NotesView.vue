@@ -63,6 +63,9 @@ const btnAddNote = () => {
   if (newNote.value.length < 10) {
     return errorMessage.value = "La nota debe contener mínimo 10 caracteres";
   }
+  if (newNote.value.length > 100) {
+    return errorMessage.value = "La nota no puede contener más de 100 caracteres";
+  }
   notes.value.push({
     id: Math.floor(Math.random() * 1000000),
     text: newNote.value,

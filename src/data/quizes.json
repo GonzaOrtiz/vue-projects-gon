@@ -1,0 +1,82 @@
+[
+    {
+    "id": 1,
+    "title": "Matemática",
+    "text": "Prueba tus habilidades Matemáticas.",
+    "image": "https://educacion30.b-cdn.net/wp-content/uploads/2020/03/fondo-matematicas_23-2148146270.jpg.webp",
+    "questions":[
+        {
+            "id":1,
+            "text": "la pregunta 1",
+            "options":[
+                {
+                    "id": 1,
+                    "label": "A",
+                    "text": "NaCL",
+                    "isCorrect": true
+                },
+                {
+                    "id": 2,
+                    "label": "B",
+                    "text": "H2O",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id":2,
+            "text": "la pregunta 2",
+            "options":[
+                {
+                    "id": 1,
+                    "label": "A",
+                    "text": "Messi",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Inglés",
+    "text": "Prueba tus habilidades Inglés.",
+    "image": "https://theyellowspot.com/wp-content/uploads/2019/02/English1-1-800x539.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Biología",
+    "text": "Prueba tus conocimientos en Biología.",
+    "image": "https://muysalud.com/wp-content/uploads/2020/11/ADN-imagen-768x513.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe"
+  },
+  {
+    "id":4,
+    "title": "Química",
+    "text": "Prueba tus conocimientos Química.",
+    "image": "https://aprendihoy.com/wp-content/uploads/2021/01/featured-image-chemistry-930x620.png"
+  },
+  {
+    "id": 5,
+    "title": "Deportes",
+    "text": "Prueba tus conocimientos en Deportes.",
+    "image": "https://phantom-marca.unidadeditorial.es/1c4cbdc04587cda2e9268e878cd47168/resize/660/f/webp/assets/multimedia/imagenes/2022/12/10/16706837224997.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Salud",
+    "text": "Prueba tus conocimientos Salud.",
+    "image": "https://www.bbva.com/wp-content/uploads/2018/09/Portada_opt-1-1920x1287.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Tecnología",
+    "text": "Prueba tus conocimientos en Tecnología.",
+    "image": "https://gestion.pe/resizer/40rS0mSTdklFrN_rwBFxk6frRjE=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TBIWSBPRTBHXZPX5UJI7YP2Y6M.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Música",
+    "text": "Prueba tus conocimientos en Música.",
+    "image": "https://musicodiy.cdbaby.com/wp-content/uploads/2018/11/lorenzo-spoleti-MlhJNEUQpBs-unsplash.jpg"
+  }
+]
