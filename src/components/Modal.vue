@@ -10,9 +10,10 @@ const props = defineProps({
     <div v-if="show" class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
+          <slot name="tittle"></slot>
+          
           <slot name="area"></slot>
-          <div class="modal-footer">
-            <button class="btn btn-danger textcolor overlay"  @click="$emit('close')" >Cerrar</button>
+            <div class="d-flex justify-content-end">
             <slot name="buttons"></slot>
           </div>
         </div>
@@ -41,7 +42,7 @@ const props = defineProps({
 }
 
 .modal-container {
-  width: 300px;
+  width: 400px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
