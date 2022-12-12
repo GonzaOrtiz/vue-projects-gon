@@ -1,26 +1,12 @@
 <template>
-  <Teleport to="body">
-    <ModalVue :show="showModal" @close="showModal = false">
-      <template v-slot:tittle>
-        <div class="d-flex justify-content-center mb-3">
-        <h3>Agregar nota</h3>
-      </div>
-      </template>
-      <template v-slot:area>
-        <textarea v-model="newNote"></textarea>
-        <p class="redcolor" v-if="errorMessage">{{ errorMessage }}</p>
-      </template>
-      <template v-slot:buttons>
-          <button class="btn btn-danger textcolor overlay mx-3" @click="showModal = false">Cerrar</button>
-          <button class="btn btn-success textcolor overlay" @click="btnAddNote">Aceptar</button>
-      </template>
-    </ModalVue>
-  </Teleport>
-
   <div class="container-fluid setting-principal-card">
-    <div class="d-flex justify-content-between">
-      <h3>Notes</h3>
-      <button class="btn btn backcolor textcolor" id="show-modal" @click="showModal = true">Nuevo</button>
+    <div class="d-flex justify-content-between align-items-center">
+      <div col>
+      <h3 class="h3-custom">Notes</h3>
+      </div>
+       <div col>
+      <button class="btn btn backcolor textcolor mb-auto" id="show-modal" @click="showModal = true">Nuevo</button>
+       </div>
     </div>
     <div class="row" v-if="notes.length <=0"> 
       <div class="col-sm-3 ">
@@ -43,6 +29,24 @@
       </div>
     </div>
   </div>
+  <Teleport to="body">
+    <ModalVue :show="showModal" @close="showModal = false">
+      <template v-slot:tittle>
+        <div class="d-flex justify-content-center mb-3">
+        <h3 class="h3-custom">Agregar nota</h3>
+      </div>
+      </template>
+      <template v-slot:area>
+        <textarea v-model="newNote"></textarea>
+        <p class="redcolor" v-if="errorMessage">{{ errorMessage }}</p>
+      </template>
+      <template v-slot:buttons>
+          <button class="btn btn-danger textcolor overlay mx-3 mb-auto" @click="showModal = false">Cerrar</button>
+          <button class="btn btn-success textcolor overlay mb-auto" @click="btnAddNote">Aceptar</button>
+      </template>
+    </ModalVue>
+  </Teleport>
+
 </template>
 
 <script lang="ts" setup>
@@ -76,55 +80,3 @@ function getRandomColor() {
 }
 
 </script>
-
-<style scoped>
-.setting {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  font-family: arial;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-}
-
-h3 {
-  margin: 10px 10px 0px 10px;
-  padding: 10px 10px 0px 10px;
-}
-
-textarea {
-  height: 100px;
-  width: 340px;
-  /* border-color: rgb(5, 40, 72); */
-  border-color: grey;
-  border-radius: 5px;
-}
-
-.redcolor {
-  color: red;
-}
-
-.backcolor {
-  background-color: rgb(5, 40, 72);
-  font-family: arial;
-}
-
-.textcolor {
-  color: white;
-  font-size: medium;
-  font-family: arial;
-}
-
-
-
-.btn-set {
-  padding: 10px 20px;
-}
-
-.setting-principal-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  max-width: 98%;
-  font-family: arial;
-}
-</style>

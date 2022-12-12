@@ -10,9 +10,6 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="  bg back-second-color" id="sidebar-wrapper">
       <div class="sidebar-heading  bg backcolor textcolor">Gonza Ortiz</div>
       <div class="list-group list-group-flush">
-        <RouterLink class="list-group-item list-group-item-action list-group-item 
-        back-second-color textcolor p-3" to="/notes"> <i class="bi bi-file-earmark-font">&nbsp; &nbsp;</i> Notas
-        </RouterLink>
         <a class="list-group-item list-group-item-action list-group-item back-second-color textcolor p-3" href="#!"><i
             class="bi bi-cast">&nbsp; &nbsp;</i> Shortcuts</a>
         <a class="list-group-item list-group-item-action list-group-item back-second-color textcolor p-3" href="#!"><i
@@ -21,8 +18,12 @@ import { RouterLink, RouterView } from 'vue-router'
             class="bi bi-chat-square-dots">&nbsp; &nbsp;</i> Events</a>
         <a class="list-group-item list-group-item-action list-group-item back-second-color textcolor p-3" href="#!"><i
             class="bi bi-clipboard-fill">&nbsp; &nbsp;</i> Profile</a>
-        <a class="list-group-item list-group-item-action list-group-item back-second-color textcolor p-3" href="#!"><i
-            class="bi bi-cloud-upload">&nbsp; &nbsp;</i> Status</a>
+            <RouterLink class="list-group-item list-group-item-action list-group-item 
+        back-second-color textcolor p-3" to="/subjects"> <i class="bi bi-cloud-upload">&nbsp; &nbsp;</i> Subjects
+        </RouterLink>
+            <RouterLink class="list-group-item list-group-item-action list-group-item 
+        back-second-color textcolor p-3" to="/notes"> <i class="bi bi-file-earmark-font">&nbsp; &nbsp;</i> Notas
+        </RouterLink>
       </div>
     </div>
 

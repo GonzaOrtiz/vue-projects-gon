@@ -10,6 +10,49 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /* Custom-Section */
+ .setting-principal-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  max-width: 98%;
+  font-family: arial;
+}
+
+.btn-set {
+  padding: 10px 20px;
+}
+.redcolor {
+  color: red;
+}
+.backcolor {
+  background-color: rgb(5, 40, 72);
+  font-family: arial;
+}
+.textcolor {
+  color: white;
+  font-size: medium;
+  font-family: arial;
+}
+textarea {
+  height: 100px;
+  width: 340px;
+  border-color: grey;
+  border-radius: 5px;
+}
+.h3-custom {
+  margin: 10px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
+}
+
+.setting {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  font-family: arial;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+ /*End Custom-Section */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
