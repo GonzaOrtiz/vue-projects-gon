@@ -1,47 +1,115 @@
 [
-    {
+  {
     "id": 1,
     "title": "Matemática",
     "text": "Prueba tus habilidades Matemáticas.",
     "image": "https://educacion30.b-cdn.net/wp-content/uploads/2020/03/fondo-matematicas_23-2148146270.jpg.webp",
-    "questions":[
-        {
-            "id":1,
-            "text": "la pregunta 1",
-            "options":[
-                {
-                    "id": 1,
-                    "label": "A",
-                    "text": "NaCL",
-                    "isCorrect": true
-                },
-                {
-                    "id": 2,
-                    "label": "B",
-                    "text": "H2O",
-                    "isCorrect": false
-                }
-            ]
-        },
-        {
-            "id":2,
-            "text": "la pregunta 2",
-            "options":[
-                {
-                    "id": 1,
-                    "label": "A",
-                    "text": "Messi",
-                    "isCorrect": true
-                }
-            ]
-        }
+    "questions": [
+      {
+        "id": 1,
+        "text": "En la sucesión de números de Fibonacci '0, 1, 1, 2, 3, 5, 8, 13, 21'... cual es el siguiente? ",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "42",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "34",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "46",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Pregunta matematica 2 ",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "42",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "34",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "46",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "La pregunta matematica n3 ",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "42",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "34",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "46",
+            "isCorrect": false
+          }
+        ]
+      }
     ]
   },
   {
     "id": 2,
     "title": "Inglés",
     "text": "Prueba tus habilidades Inglés.",
-    "image": "https://theyellowspot.com/wp-content/uploads/2019/02/English1-1-800x539.jpg"
+    "image": "https://theyellowspot.com/wp-content/uploads/2019/02/English1-1-800x539.jpg",
+    "questions": [
+      {
+        "id": 1,
+        "text": "En la sucesión de números de Fibonacci '0, 1, 1, 2, 3, 5, 8, 13, 21'... cual es el siguiente? ",
+        "options": [
+          {
+            "id": 1,
+            "label": "A",
+            "text": "42",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "label": "B",
+            "text": "34",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "label": "C",
+            "text": "46",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 3,
@@ -50,7 +118,7 @@
     "image": "https://muysalud.com/wp-content/uploads/2020/11/ADN-imagen-768x513.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe"
   },
   {
-    "id":4,
+    "id": 4,
     "title": "Química",
     "text": "Prueba tus conocimientos Química.",
     "image": "https://aprendihoy.com/wp-content/uploads/2021/01/featured-image-chemistry-930x620.png"
