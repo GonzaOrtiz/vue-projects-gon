@@ -10,7 +10,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="progress mb-4">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%">66%</div>
                 </div>
             </div>
         </div>
