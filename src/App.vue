@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import FooterVue from './components/Footer.vue';
 </script>
 
 <template>
@@ -26,8 +27,6 @@ import { RouterLink, RouterView } from 'vue-router'
         </RouterLink>
       </div>
     </div>
-
-
     <!-- Page content wrapper-->
     <div id="page-content-wrapper">
       <!-- Top navigation-->
@@ -63,15 +62,8 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 
 
+  <FooterVue></FooterVue>
 
-
-  <footer class="bg- backcolor  text-center text-lg-start">
-  <div class="text-center p-3 textcolor" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Gonza Ortiz
-    <a class="text textcolor">vue-projects</a>
-  </div>
-  <!-- Copyright -->
-</footer>
 
 </template>
 
